@@ -1,2 +1,3 @@
-# Clog
- Coding Journal Website
+# Clog ()
+## My Coding Journal Website
+### Explore topics I am learning myself
