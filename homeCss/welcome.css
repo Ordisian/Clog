@@ -1,0 +1,157 @@
+/* Welcome Section */
+.welcome {
+    padding: 5rem 2rem;
+    background: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome__overlay-transition{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 90%, black);
+    z-index: 1;
+}
+
+.welcome__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.welcome__title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+
+.welcome__title::after { /* animated underline */
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        var(--main-html-color),
+        transparent,
+        var(--main-css-color),
+        transparent,
+        var(--main-html-color)); 
+    background-size: 200% 100%;
+    transition: all 0.3s ease;
+    animation: color-cycle-right 5s linear infinite;
+    border-radius: 3px;
+}
+
+.welcome__title:hover::after { /* scale up */
+    height: 8px;
+    bottom: -12px;
+}
+
+.welcome__title .html-accent {
+    color: var(--main-html-color);
+    margin-right: 0.5rem;
+}
+
+.welcome__title .css-accent {
+    color: var(--main-css-color);
+    margin-left: 0.5rem;
+}
+
+.welcome__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.welcome__text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.welcome__text p {
+    margin-bottom: 1.5rem;
+}
+
+.welcome__text .html-accent {
+    color: var(--main-html-color);
+    font-weight: 600;
+}
+
+.welcome__text .css-accent {
+    color: var(--main-css-color);
+    font-weight: 600;
+}
+
+.welcome__text .js-accent {
+    color: var(--main-js-color-dark);
+    font-weight: 600;
+}
+
+.welcome__text-p {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.welcome__images {
+    text-align: center;
+    position: relative;
+}
+
+.welcome__images img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+    transition: transform 0.5s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Decorative elements */
+.welcome::before { /* Blue Circle */
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(transparent 25%, var(--main-css-color));
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.welcome::after { /* Orange Circle */
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(transparent 25%, var(--main-html-color));
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Hover effects */
+.welcome__title .html-accent,
+.welcome__title .css-accent {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.welcome__title:hover .html-accent {
+    transform: translateX(-5px) scale(1.5);
+}
+
+.welcome__title:hover .css-accent {
+    transform: translateX(5px) scale(1.5);
+}
