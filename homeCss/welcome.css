@@ -155,3 +155,20 @@
 .welcome__title:hover .css-accent {
     transform: translateX(5px) scale(1.5);
 }
+
+.about-me-btn {
+    background-color: var(--main-html-color);
+    border-color: var(--main-html-color);
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    height: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.about-me-btn:hover {
+    transform: translateX(5px) scale(1.5);
+    background-color: var(--main-css-color);
+    border-color: var(--main-css-color);
+}

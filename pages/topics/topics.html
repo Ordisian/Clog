@@ -11,7 +11,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/index.html" class="navbar__logo">
+            <a href="../../index.html" class="navbar__logo">
                 <div class="navbar__logo-text">
                     <div class="navbar__logo-bracket-left">&lt;</div>
                     <div>/</div>
@@ -22,13 +22,13 @@
             
             <ul class="navbar__menu">
                 <li class="navbar__menu-item">
-                    <a href="/index.html" class="navbar__menu-link">Home</a>
+                    <a href="../../index.html" class="navbar__menu-link">Home</a>
                 </li>
                 <li class="navbar__menu-item">
-                    <a href="/pages/topics/topics.html" class="navbar__menu-link active">Topics</a>
+                    <a href="./topics.html" class="navbar__menu-link active">Topics</a>
                 </li>
                 <li class="navbar__menu-item navbar__menu-item--button">
-                    <a href="https://github.com/your-repo" class="navbar__button">
+                    <a href="https://github.com/Ordisian/Clog" class="navbar__button">
                         <img src="/assets/images/github-mark-white.svg" alt="GitHub">
                     </a>
                 </li>
@@ -44,137 +44,10 @@
                 <div class="topic-chip">HTML</div>
                 <div class="topic-chip">CSS</div>
                 <div class="topic-chip">JavaScript</div>
-                <div class="topic-chip">Animations</div>
-                <div class="topic-chip">Layout</div>
-                <div class="topic-chip">Flexbox</div>
-                <div class="topic-chip">Grid</div>
-                <div class="topic-chip">Variables</div>
             </div>
         </div>
 
         <!-- Topics Container -->
-        <div class="topics-container">
-            <!-- HTML Section -->
-            <div class="topic-section">
-                <div class="topic-header">
-                    <div class="topic-icon html-icon">&lt;/&gt;</div>
-                    <h2>HTML Notes</h2>
-                </div>
-                <div class="topic-notes">
-                    <!-- Note 1 -->
-                    <div class="note-card">
-                        <h3 class="note-title">Semantic HTML Structure</h3>
-                        <div class="note-date">Posted: June 10, 2025</div>
-                        <div class="note-content">
-                            <p>Proper semantic markup improves accessibility and SEO:</p>
-                            <pre><code>&lt;article&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Article Title&lt;/h1&gt;
-    &lt;/header&gt;
-    &lt;section&gt;
-        &lt;p&gt;Main content here...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;footer&gt;
-        &lt;p&gt;Article metadata&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;/article&gt;</code></pre>
-                        </div>
-                    </div>
-                    
-                    <!-- Note 2 -->
-                    <div class="note-card">
-                        <h3 class="note-title">Accessible Forms</h3>
-                        <div class="note-date">Posted: June 15, 2025</div>
-                        <div class="note-content">
-                            <p>Always pair labels with inputs:</p>
-                            <pre><code>&lt;label for="username"&gt;Username:&lt;/label&gt;
-&lt;input type="text" id="username" name="username"&gt;</code></pre>
-                            <p>Use <code>fieldset</code> for grouped inputs:</p>
-                            <pre><code>&lt;fieldset&gt;
-    &lt;legend&gt;Shipping Method&lt;/legend&gt;
-    &lt;input type="radio" id="standard" name="shipping"&gt;
-    &lt;label for="standard"&gt;Standard&lt;/label&gt;
-    &lt;input type="radio" id="express" name="shipping"&gt;
-    &lt;label for="express"&gt;Express&lt;/label&gt;
-&lt;/fieldset&gt;</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CSS Section -->
-            <div class="topic-section">
-                <div class="topic-header">
-                    <div class="topic-icon css-icon">{ }</div>
-                    <h2>CSS Notes</h2>
-                </div>
-                <div class="topic-notes">
-                    <!-- Note 1 -->
-                    <div class="note-card css-note">
-                        <h3 class="note-title">CSS Grid Layout</h3>
-                        <div class="note-date">Posted: June 5, 2025</div>
-                        <div class="note-content">
-                            <p>Basic grid template columns:</p>
-                            <pre><code>.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}</code></pre>
-                            <p>Grid area placement:</p>
-                            <pre><code>.item {
-    grid-column: 2 / 4;
-    grid-row: 1;
-}</code></pre>
-                        </div>
-                    </div>
-                    
-                    <!-- Note 2 -->
-                    <div class="note-card css-note">
-                        <h3 class="note-title">Custom Properties</h3>
-                        <div class="note-date">Posted: June 12, 2025</div>
-                        <div class="note-content">
-                            <p>Define variables in root:</p>
-                            <pre><code>:root {
-    --primary-color: #ff6600;
-    --spacing-unit: 1rem;
-}</code></pre>
-                            <p>Use them anywhere:</p>
-                            <pre><code>.button {
-    background: var(--primary-color);
-    padding: var(--spacing-unit);
-}</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- JavaScript Section -->
-            <div class="topic-section">
-                <div class="topic-header">
-                    <div class="topic-icon js-icon">( )</div>
-                    <h2>JavaScript Notes</h2>
-                </div>
-                <div class="topic-notes">
-                    <!-- Note 1 -->
-                    <div class="note-card js-note">
-                        <h3 class="note-title">DOM Manipulation</h3>
-                        <div class="note-date">Posted: June 8, 2025</div>
-                        <div class="note-content">
-                            <p>Querying elements:</p>
-                            <pre><code>// Single element
-const header = document.querySelector('header');
-
-// Multiple elements
-const buttons = document.querySelectorAll('.btn');</code></pre>
-                            <p>Event listeners:</p>
-                            <pre><code>button.addEventListener('click', () => {
-    console.log('Button clicked!');
-});</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Footer Section -->
         <footer class="footer">
@@ -189,15 +62,15 @@ const buttons = document.querySelectorAll('.btn');</code></pre>
                 <!-- Navigation links -->
                 <nav class="footer__nav">
                       <ul class="footer__links">
-                          <li><a href="/" class="footer__link">Home</a></li>
-                          <li><a href="/pages/topics/topics.html" class="footer__link">Topics</a></li>
-                          <li><a href="/pages/about/about.html" class="footer__link">About</a></li>
+                          <li><a href="../../index.html" class="footer__link">Home</a></li>
+                          <li><a href="./topics.html" class="footer__link">Topics</a></li>
+                          <li><a href="../about/about.html" class="footer__link">About</a></li>
                       </ul>
                 </nav>
             
                 <!-- Social/Code links -->
                 <div class="footer__social">
-                    <a href="/" class="footer__icon-link">
+                    <a href="https://github.com/Ordisian/Clog" class="footer__icon-link">
                         <img src="/assets/images/github-mark-white.svg" alt="" class="footer__icon">
                     </a>
                 </div>
@@ -217,24 +90,5 @@ const buttons = document.querySelectorAll('.btn');</code></pre>
             </div>
         </footer>
     </section>
-
-    <script>
-        // Simple JavaScript to handle topic filtering
-        document.querySelectorAll('.topic-chip').forEach(chip => {
-            chip.addEventListener('click', () => {
-                // Remove active class from all chips
-                document.querySelectorAll('.topic-chip').forEach(c => {
-                    c.classList.remove('active');
-                });
-                // Add active class to clicked chip
-                chip.classList.add('active');
-                
-                // Here you would add filtering logic
-                // This is just a placeholder implementation
-                const topic = chip.textContent.trim();
-                console.log(`Filtering by: ${topic}`);
-            });
-        });
-    </script>
 </body>
 </html>
