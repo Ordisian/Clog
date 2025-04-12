@@ -1,7 +1,7 @@
 /* ---------------------------------- Hero Section ---------------------------------- */
 .hero {
     height: 100vh;
-    background-image: url('/assets/images/pexels-harold-vasquez-853421-2653362.jpg');
+    background-image: url('./assets/images/pexels-harold-vasquez-853421-2653362.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
